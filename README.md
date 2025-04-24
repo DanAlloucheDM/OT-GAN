@@ -19,6 +19,15 @@ Ce projet implémente un réseau antagoniste génératif (GAN) amélioré par la
 - `ot_gan_critic.pt` : Modèle pré-entraîné du critique
 - `ot_gan_gen.pt` : Modèle pré-entraîné du générateur
 
+## Téléchargement des modèles pré-entraînés
+Les modèles pré-entraînés sont disponibles dans la section "Releases" de ce dépôt GitHub. Pour les télécharger :
+
+1. Accédez à la [page des Releases](https://github.com/DanAlloucheDM/OT-GAN/releases)
+2. Téléchargez les fichiers `ot_gan_critic.pt` et `ot_gan_gen.pt` depuis la dernière release
+3. Placez ces fichiers dans le répertoire principal du projet
+
+Alternativement, vous pouvez générer vous-même les modèles en exécutant l'entraînement complet via le notebook.
+
 ## Prérequis
 - Python 3.7+
 - PyTorch
@@ -44,7 +53,7 @@ cd OT-GAN
 jupyter notebook OT_GAN.ipynb
 ```
 
-3. Pour l'entraînement (environ 1 heure avec GPU) :
+3. Pour l'entraînement  :
    - Exécutez toutes les cellules du notebook
    - Décommentez la section d'entraînement en supprimant les "#" devant `otgan = train(args, resume_training)`
 
